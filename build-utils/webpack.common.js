@@ -2,7 +2,7 @@ const path = require('path')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const HtmlWebpackInjector = require('html-webpack-injector')
+
 
 module.exports = {
   plugins: [
@@ -12,7 +12,7 @@ module.exports = {
       title: 'Hello Webpack bundled Javascript Project',
       template: './src/index.html',
     }),
-    new HtmlWebpackInjector()
+    
   ],
 
   entry: './src/index.js',
@@ -22,6 +22,7 @@ module.exports = {
     filename: 'bundle.js'
   },
   devServer: {
+    // clientLogLevel: 'info',
     contentBase: './dist'
   },
   module: {
