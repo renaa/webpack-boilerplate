@@ -1,4 +1,4 @@
-exellent writeup: https://www.robinwieruch.de/javascript-project-setup-tutorial/
+https://www.robinwieruch.de/javascript-project-setup-tutorial/
 ```
 
 npm install -g http-server
